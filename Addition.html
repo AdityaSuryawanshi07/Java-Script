@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    // Create function named Addition to add two numbers
+    function add(){
+        Number1 = document.getElementById("num1").value;
+        // getElementById used to locate number & value for get its value 
+
+        Number2 = document.getElementById("num2").value;
+
+        r = +Number1 + +Number2
+        // create variable which add two number
+
+        document.getElementById("result").innerHTML = r;
+        // innerHTML ie uesd for print result on same page
+    }
+</script>
+
+</head>
+<body>
+
+
+    <input type="text" id="num1"> <br><br>
+    <!-- Get  a input box for input from user, also use ID attribute for JS code -->
+
+    <input type="text" id="num2"><br><br>
+
+    <button onclick="add()">Add</button>
+    <!-- onclick used for sending data from HTML to JS code   -->
+
+    
+    <h1 id="result"></h1>
+    <!-- Created h1 tag for print result  -->
+</body>
+</html>
