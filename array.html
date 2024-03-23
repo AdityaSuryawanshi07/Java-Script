@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function print_data(){
+        var data=[];
+        var list_size =document.getElementById("size").value;
+
+        for(var i = 1; i <= list_size ; i++){
+            var value = prompt("Enter value :");
+            data.push(value);
+        }
+
+        // To display Data
+        var p_list = document.getElementById('p_ul');
+        for(var i = 0 ; i < data.length; i++){
+            p_list.innerHTML += "<li>" + data[i] +"</li>";
+        }
+
+    }
+</script>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        background-color: #ff2f;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    li:nth-child(odd){
+        background-color: #f2f2f2;
+    }
+</style>
+<body>
+    <input type="text" placeholder="Enter the data size :" id="size">
+    <button onclick="print_data()">Submit</button>
+    <ul id="p_ul"></ul>
+</body>
+</html>
