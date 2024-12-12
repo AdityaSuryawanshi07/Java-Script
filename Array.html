@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+  <!-- This is our first program -->
+   <!-- We are writing just Hello World in simple manner -->
+    
+   <script language="javascript" type="text/javascript">
+    
+    const studentData = [1,"Rahul","Bihar",23];
+    // document.write(studentData);
+
+    document.write("*Our First Array : <br><br>");
+
+    document.write(studentData+"<br><br>");
+
+    
+    const colors = [];
+	colors[0] = "Red";
+	colors[1] = "Yellow";
+	colors[2] = "Blue";
+
+    document.write("*Our Second Array : <br><br>");
+	document.write(colors+"<br><br>");
+
+    document.write("*If we want to replace element at first position : <br> *Let's replace it with =  Green "+"<br><br>")
+
+    colors[0] = "Green";
+    document.write(colors);
+
+    document.write("<br><br>If we want access any element at any positon : <br>Lets access element at third position"+"<br><br>")
+
+    document.write("Element at third position is : "+colors[2])
+
+    document.write("<br><br>If you want access last element of Array : ");
+
+    let lastElement = colors[colors.length - 1];
+
+    document.write(lastElement+"<br>");
+
+   // There are two ways to decleare array
+
+  //  First we decleare as normally we do :
+
+  //  let students = ["Aditya","Deepak","Mahesh"];
+
+  // Now there is another way to call Array that is :
+
+  const state = new Array("<br>"+"Bengal","Karnataka","Maharashtra","Gujrat")
+   document.write(state);
+   </script>
+
+</body>
+</html>
